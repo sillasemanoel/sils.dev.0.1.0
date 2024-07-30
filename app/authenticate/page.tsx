@@ -1,5 +1,5 @@
 import prisma from "@/lib/db";
-import { getNameCapitalized } from "@/app/_utils/format-text";
+import { getTwoNamesCapitalized } from "@/app/_utils/format-text";
 import {
   Card,
   CardHeader,
@@ -21,7 +21,7 @@ export default async function Authenticate() {
       <Card className="flex w-full max-w-md flex-col border-none shadow-none">
         <CardHeader className="gap-2">
           <CardTitle className="text-3xl font-bold">
-            Olá, {getNameCapitalized(userName)}
+            Olá, {getTwoNamesCapitalized(userName)}
           </CardTitle>
           <CardDescription className="text-sm text-muted-foreground">
             Após inserir sua chave, será possível fazer edições.
